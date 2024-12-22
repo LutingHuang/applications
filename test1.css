@@ -1,0 +1,65 @@
+.Headline{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    color:navy;
+    margin-bottom: 10px;
+}
+
+.list{
+    padding: 5px;
+    color:darkslategrey;
+}
+
+.desktop-list{
+    display: block;
+    display: flex;
+}
+
+.mobile-list{
+    display: none;
+}
+
+.chapter{
+    margin-top: 10px;
+    font-size: 18px;
+    color:darkblue;
+}
+
+.content{
+    margin-top: 5px;
+    margin-left: 3%;
+    margin-right: 35%;
+    font-size: 16px;
+    color:black;
+}
+
+@media (max-width: 1250px){
+    /* 平板css */
+    .desktop-list{
+        display: block;
+        display: flex;
+    }
+    .mobile-list{
+        display: none;
+    }
+}
+
+@media (max-width: 500px){
+    /* 手機css */
+    .desktop-list{
+        display: none;
+    }
+    .mobile-list{
+        display: block;
+    }
+}
